@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>3 Column Layout</title>
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+<header class="header"><img width="50px" src="public/images/122.png"> <p>Header</p></header>
+<div class="container">
+    <main class="center column">
+        <article>
+            <h1>Lorem ipsum</h1>
+            <p></p>
+        </article>
+
+
+        <div id="slider">
+            <script>
+                window.onload = function() {
+                    // ви можете зробити скільки завгодно слайдів
+                    let slides = [
+                        {
+                            title: "Google",
+                            background: "public/images/1.png",
+                            link: "http://google.com"
+                        }, {
+                            title: "Yahoo",
+                            background: "public/images/2.png",
+                            link: "http://yahoo.com"
+                        }, {
+                            title: "Amazon",
+                            background: "public/images/3.png",
+                            link: "http://amazon.com"
+                        }
+                    ]
+                    Slider.initSlider(slides);
+                };
+            </script>
+        </div>
+
+        <p></p>
+        <div class="btn-bar">
+            <button class="show">Show</button>
+            <button class="hide">Hide</button>
+            <button class="toggle">auto</button>
+        </div>
+
+        <p></p>
+        <a href="#" class="button"  onclick="Slider.prevSlide()">Prev</a>
+        <a href="#" class="button" onclick="Slider.nextSlide()">Next</a>
+
+        <script src="assets/js/script.js"></script>
+    </main>
+
+
+    <nav class="left column">
+        <h3>Left heading</h3>
+        <ul>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="table.html">table</a></li>
+        </ul>
+        <h3>Left heading</h3>
+        <ul>
+            <li><a href="index.html">index</a></li>
+            <li><a href="media.html">media</a></li>
+        </ul>
+    </nav>
+    <div class="right column">
+        <h3>Right heading</h3>
+        <ul>
+            <li><a href="about.html">about</a></li>
+        </ul>
+        <p></p>
+    </div>
+    <div class="push"></div>
+</div>
+<div class="footer-wrapper">
+    <footer class="footer"><img width="50px" src="public/images/122.png"></footer>
+</div>
+</body>
+</html>
